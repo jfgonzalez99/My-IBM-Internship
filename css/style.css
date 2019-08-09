@@ -1,0 +1,198 @@
+/*---------- Main ----------*/
+body {
+    background-color: white;
+    color: #171717;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: calc(15px + 6vmin);
+}
+
+h2 {
+    text-align: center;
+    font-size: calc(14px + 4vmin);
+}
+
+h3 {
+    font-size: calc(10px + 2vmin);
+}
+
+a:hover {
+  text-decoration: none;
+  color: #061F80;
+}
+
+.subheader {
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    font-size: calc(10px + 2vmin);
+}
+
+#subtitle {
+  padding: 5px;
+}
+
+.section-header {
+  padding: 35px;
+}
+
+.section-header .subheader {
+  color: #0062FF;
+}
+
+
+/*---------- Code block ----------*/
+pre {
+  border-radius: 10px;
+}
+
+code {
+  padding-bottom: 100px;
+}
+
+.code {
+  text-align: left;
+}
+
+#soap {
+  max-width: 60%;
+  margin-left: 11%;
+}
+
+.ant-example {
+  max-width: 95%;
+  margin: auto;
+}
+
+
+/*---------- Tables ----------*/
+tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+td {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;  
+}
+
+tr:nth-child(odd) {
+  background-color: #f3f3f3; 
+}
+
+.left-col {
+  color: #0062FF;
+  text-align: right;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.right-col {
+  max-width: 50em;
+}
+
+
+/*---------- Bar chart ----------*/
+#barchart {
+  text-align: center;
+}
+
+#barchart img {
+  max-width: 85%;
+}
+
+
+/*---------- Lists ----------*/
+ul {
+  color: #0062FF;
+  list-style-type: circle;
+  font-size: calc(10px + 2vmin);
+}
+
+ul#ant {
+  max-width: 78%;
+  margin-left: 11%;
+}
+
+ul.podman {
+  max-width: 84%;
+  margin-left: 8%;
+}
+
+li {
+  padding: 10px;
+}
+
+li span.text {
+  color: #171717;
+}
+
+.list-header {
+  background-color: #f3f3f3;
+  padding: 15px;
+  text-align: center;
+  font-size: calc(10px + 3vmin); 
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.list-with-header {
+  background-color: #f3f3f3;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 85%;
+}
+
+.ant-challenges {
+  height: 70%;
+}
+
+.ta-challenges {
+  height: 75%;
+}
+
+
+/*---------- Special ----------*/
+.ibm-blue {
+  color: #0062FF;
+  font-weight: bold;
+}
+
+.center {
+    margin: auto;
+}
+
+.highlight {
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  border: none;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+/*---------- fullpage.js ----------*/
+.fp-tooltip {
+  background: #0062FF;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  font-family: 'IBM Plex Mono', monospace !important;
+  font-size: 14px !important;
+}

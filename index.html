@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My IBM Internship</title>
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/github.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+</head>
+<body>
+    <div id="fullpage">
+
+
+        <!-- Welcome -->
+        <section class="vertical-scrolling fp-auto-height-responsive" id="1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>
+                            My Internship <span class="ibm-blue">@ IBM</span>
+                        </h1>
+                        <p class="subheader"><span class="highlight">Justin Gonzalez</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Overview -->
+        <section class="vertical-scrolling fp-auto-height-responsive" id="2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2>Overview</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="center">
+                            <tr>
+                                <td class="left-col">
+                                    <a href="#Week_1"><h3>Week 1:</h3></a>
+                                </td>
+                                <td class="right-col">
+                                    <h3>Removing Ant Build Dependencies</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-col">
+                                    <a href="#Weeks_2-6"><h3>Weeks 2-6:</h3></a>
+                                </td>
+                                <td class="right-col">
+                                    <h3>Building FTM with Rootless Containers</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-col">
+                                    <a href="#Week_7"><h3>Week 7:</h3></a>
+                                </td>
+                                <td class="right-col">
+                                    <h3>Modernizing FTM with IBM Cloud Transformation Advisor</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-col">
+                                    <a href="#Weeks_8-10"><h3>Weeks 8-10:</h3></a>
+                                </td>
+                                <td class="right-col">
+                                    <h3>Upgrading the Zelle Early Warning Services Emulator</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left-col">
+                                    <a href="#Retrospect">
+                                        <h3>Retrospect:</h3>
+                                    </a>
+                                </td>
+                                <td class="right-col">
+                                    <h3>What I Learned</h3>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Week 1 -->
+        <section class="vertical-scrolling fp-auto-height-responsive" id="3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2>Removing Ant Build Dependencies</h2>
+                            <p class="subheader" id="sub-title">Week 1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul id="ant">
+                            <li><span class="text">Removed <span class="highlight">Ant</span> task dependencies in database build tools files</span></li> 
+                            <li><span class="text">Replaced with plain <span class="highlight">Java</span> methods</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row ant-example">
+                    <div class="col-md-12">
+                        <p class="subheader code">Example:</p>
+                    </div>
+                </div>
+                <div class="row ant-example">
+                    <div class="col-md-6">
+<pre><code class="java">import org.apache.tool.ant.Task
+public class AntTask extends Task {
+    public void execute() {
+        log("This is an ant task.");
+    }
+}
+</code></pre>
+                    </div>
+                    <div class="col-md-6">
+<pre><code class="java">
+public class NotAntTask {
+    public void execute() {
+        System.out.println("This is not an ant task.");
+    }
+}
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vertical-scrolling fp-auto-height-responsive" id="4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="list-header">Challenges</h3>
+                        <ul class="list-with-header ant-challenges">
+                            <li><span class="text">Unfamiliar with repository</span></li>
+                            <li><span class="text">Unfamiliar with Apache Ant</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="list-header">Lessons</h3>
+                        <ul class="list-with-header ant-challenges">
+                            <li><span class="text">How to navigate repository</span></li>
+                            <li><span class="text">A basic understanding of Ant and build process</span></li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <!-- Weeks 2 - 6 -->
+        <section class="vertical-scrolling fp-auto-height-responsive" id="5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2>Building FTM with Rootless Containers</h2>
+                            <p class="subheader">Weeks 2-6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="podman">
+                            <li><span class="text">Created a <span class="text">Learned <span class="highlight">rootless containerized build</span> of FTM for Corporate Payment Services and Digital Payments</span></li>
+                            <li><span class="text">Transitioned existing Docker and build files from <span class="highlight">Docker</span> to <span class="highlight">Podman</span> and <span class="highlight">Buildah</span> in order to make the build rootless</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vertical-scrolling fp-auto-height-responsive" id="6">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="barchart">
+                            <img src="img/savings.png" alt="Squash Savings">
+                        </div>
+                        <ul class="podman">
+                            <li><span class="text">Wrote an image squashing script which reduced container image sizes by 1.6 GB</span></li>
+                            <li><span class="text">Created documentation on the differences between Podman and Docker</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vertical-scrolling fp-auto-height-responsive" id="7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="list-header">Challenges</h3>
+                        <ul class="list-with-header">
+                            <li><span class="text">Unfamiliar with Docker</span></li>
+                            <li><span class="text">Working under rootless permissions</span></li>
+                            <li><span class="text">Rootless container networking</span></li>
+                            <li><span class="text">Application not fully optimized for containers (Giant images)</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="list-header">Lessons</h3>
+                        <ul class="list-with-header">
+                            <li><span class="text">Docker</span></li>
+                            <li><span class="text">Docker build process</span></li>
+                            <li><span class="text">Shell scripting</span></li>
+                            <li><span class="text">Automate your tasks</span></li>
+                            <li><span class="text">Patience (Work while you wait)</span></div>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <!-- Week 7 -->
+        <section class="vertical-scrolling fp-auto-height-responsive" id="8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2>Modernizing FTM with IBM Cloud Transformation Advisor</h2>
+                            <p class="subheader">Week 7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="podman">
+                            <li><span class="text">Installed and configured IBM Cloud Transformation Advisor</span></li>
+                            <li><span class="text">Used to analyze applications and find issues that need to be addressed for the transition to containers and WebSphere
+                            Traditional on Private Cloud</span></li>
+                            <li><span class="text">Ran the Transformation Advisor’s data collector tool on WebSphere izhProfile</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vertical-scrolling fp-auto-height-responsive" id="9">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="list-header">Challenges</h3>
+                        <ul class="list-with-header ta-challenges">
+                            <li><span class="text">Confusing installation guide</span></li>
+                            <li><span class="text">Not optimized for Windows</span></li>
+                            <li><span class="text">Docker in Docker container networking</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="list-header">Lessons</h3>
+                        <ul class="list-with-header ta-challenges">
+                            <li><span class="text">Limitations of Docker</span></li>
+                            <li><span class="text">Know when to drop a project</span></li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <!-- Weeks 8 - 10 -->
+        <section class="vertical-scrolling fp-auto-height-responsive" id="10">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2>Upgrading the Zelle Early Warning Services Emulator</h2>
+                            <p class="subheader">Weeks 8-10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="podman">
+                            <li><span class="text">Utilized <span class="highlight">SOAP</span> calls to create custom <span class="highlight">Java</span> methods for the EWS emulator to programmatically test for fraudulent Zelle transactions</span></li>
+                            <li><span class="text">Allowed for the clearing of emulator data as well as the loading of external token stores, organization stores, and emulator properties to be performed via SOAP calls</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vertical-scrolling fp-auto-height-responsive" id="11">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="soap">
+                           <p class="subheader code">Example SOAP call:</p>
+<pre><code class="xml">&lt;identifier&gt;<span class="ibm-blue">loadtokenstore@test.com</span>&lt;/identifier&gt;
+&lt;person&gt;
+    &lt;first-name&gt;<span class="ibm-blue">?</span>&lt;/first-name&gt;
+    &lt;last-name&gt;<span class="ibm-blue">C:\\YourDirectory\\YourTokenStore.csv</span>&lt;/last-name&gt;
+&lt;/person&gt;
+</code></pre> 
+                        </div>
+                        <ul class="podman">
+                            <li><span class="text">Updated the SOAP traffic table to include a way to export all SOAP traffic to a text file as well as by default sort by descending date</span></li>
+                            <li><span class="text">Debugged an issue with retrieving a user’s pending payments and configured the emulator to behave like real EWS</span></li>
+                            <li><span class="text">Created help screens for Zelle Participant screen, Zelle Recipient screen, Zelle Token screen, and Zelle Organization screen</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="vertical-scrolling fp-auto-height-responsive" id="12">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="list-header">Challenges</h3>
+                        <ul class="list-with-header">
+                            <li><span class="text">Unfamiliar with SOAP</span></li>
+                            <li><span class="text">Passing custom file locations as a parameter to SOAP</span></li>
+                            <li><span class="text">Design choices (Pending Payments behavior, method of passing parameters, etc.)</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="list-header">Lessons</h3>
+                        <ul class="list-with-header">
+                            <li><span class="text">SOAP and SoapUI</span></li>
+                            <li><span class="text">Know who is using your product</span></li>
+                            <li><span class="text">Know what purpose your product serves</span></li>
+                            <li><span class="text">Design accordingly</span></li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+        <!-- Retrospect -->
+        <section class="vertical-scrolling fp-auto-height-responsive" id="13">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h2>What I Learned <span class="ibm-blue">@ IBM</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6" id="tech-lessons">
+                        <h3 class="list-header">Technical</h3>
+                        <ul class="list-with-header">
+                            <li><span class="text">Docker (and Podman)</span></li>
+                            <li><span class="text">Shell scripting</span></li>
+                            <li><span class="text">Java</span></li>
+                            <li><span class="text">How large applications are built and packaged</span></li>
+                            <li><span class="text">How to work with a large code repository</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6" id="soft-lessons">
+                        <h3 class="list-header">Non-Technical</h3>
+                        <ul class="list-with-header">
+                            <li><span class="text">How to work on a large team</span></li>
+                            <li><span class="text">Agile and Waterfall Development</span></li>
+                            <li><span class="text">Industry practices</span></li>
+                            <li><span class="text">How to apply what I learn in school in the workplace</span></li>
+                            <li><span class="text">Consumer conscious design</span></li>
+                            <li><span class="text">Proactivity</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+    <!-- Scripts -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/highlight.pack.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
